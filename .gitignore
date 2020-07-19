@@ -24,7 +24,8 @@
 *.lai
 *.la
 *.a
-*.lib
+# Getting rid of this to make my life easier early on
+# *.lib
 
 # Executables
 *.exe
