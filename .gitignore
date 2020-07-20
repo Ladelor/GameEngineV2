@@ -32,4 +32,7 @@
 *.out
 *.app
 
+*.opendb
+*.opensdf
+
 Debug/
