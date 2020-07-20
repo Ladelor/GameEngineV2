@@ -5,14 +5,12 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 Window::Window(int width, int height, std::string title): 
 	_width(width), _height(height), _title(title)
 {
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+	glfwWindowHint(GLFW_SAMPLES, 4); // 4x antialiasing
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3); // We want OpenGL 3.3
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); // We don't want the old OpenGL 
 
 	_window = glfwCreateWindow(_width, _height, _title.c_str(), NULL, NULL);
-
-	open();
 }
 
 inline int Window::getHeight()
@@ -56,16 +54,8 @@ int Window::open()
 	return 0;
 }
 
-bool Window::gameLoop()
+bool Window::isClosing()
 {
-	// Check if any events have been activated (key pressed, mouse moved etc.) and call corresponding response functions
-	glfwPollEvents();
-
-	// Render
-	// Clear the colorbuffer
-	glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-	glClear(GL_COLOR_BUFFER_BIT);
-
 	// Swap the screen buffers
 	glfwSwapBuffers(_window);
 

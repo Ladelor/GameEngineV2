@@ -19,5 +19,5 @@ public:
 	std::string getTitle();
 
 	int open();
-	bool gameLoop();
+	bool isClosing();
 };

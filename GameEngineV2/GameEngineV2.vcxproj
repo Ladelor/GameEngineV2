@@ -148,10 +148,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Dependancies\GLAD\src\glad.c" />
+    <ClCompile Include="Source\shaders.cpp" />
     <ClCompile Include="Source\source.cpp" />
     <ClCompile Include="Source\window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\shaders.h" />
     <ClInclude Include="Source\window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
