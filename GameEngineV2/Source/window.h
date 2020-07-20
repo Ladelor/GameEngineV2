@@ -1,5 +1,7 @@
 #pragma once
+#include <iostream>
 #include <string>
+#include "glad/glad.h"
 #include <glfw3.h>
 
 class Window

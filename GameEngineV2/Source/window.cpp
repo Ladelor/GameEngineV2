@@ -1,9 +1,18 @@
 #include "window.h"
 
+void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
+
 Window::Window(int width, int height, std::string title): 
 	_width(width), _height(height), _title(title)
 {
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
+
 	_window = glfwCreateWindow(_width, _height, _title.c_str(), NULL, NULL);
+
+	open();
 }
 
 inline int Window::getHeight()
@@ -32,19 +41,41 @@ int Window::open()
 	/* Make the window's context current */
 	glfwMakeContextCurrent(_window);
 
+	// Set the required callback functions
+	glfwSetKeyCallback(_window, key_callback);
+
+	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+	{
+		std::cout << "Failed to initialize OpenGL context" << std::endl;
+		return -1;
+	}
+
+	// Define the viewport dimensions
+	glViewport(0, 0, _width, _height);
+
 	return 0;
 }
 
 bool Window::gameLoop()
 {
-	/* Render here */
-	glClear(GL_COLOR_BUFFER_BIT);
-
-	/* Swap front and back buffers */
-	glfwSwapBuffers(_window);
-
-	/* Poll for and process events */
+	// Check if any events have been activated (key pressed, mouse moved etc.) and call corresponding response functions
 	glfwPollEvents();
 
+	// Render
+	// Clear the colorbuffer
+	glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+	glClear(GL_COLOR_BUFFER_BIT);
+
+	// Swap the screen buffers
+	glfwSwapBuffers(_window);
+
 	return glfwWindowShouldClose(_window);
+}
+
+// Is called whenever a key is pressed/released via GLFW
+void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
+{
+	std::cout << key << std::endl;
+	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+		glfwSetWindowShouldClose(window, GL_TRUE);
 }

@@ -1,5 +1,6 @@
+#define GLEW_STATIC
+
 #include <iostream>
-#include <glfw3.h>
 #include "window.h"
 
 int main(void)
@@ -15,7 +16,7 @@ int main(void)
     /* Loop until the user closes the window */
     while (!window.gameLoop())
     {
-        //std::cout << "hi";
+
     }
 
     glfwTerminate();
