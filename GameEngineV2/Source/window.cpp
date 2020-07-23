@@ -6,24 +6,24 @@ Window::Window(int width, int height, std::string title):
 	_width(width), _height(height), _title(title)
 {
 	glfwWindowHint(GLFW_SAMPLES, 4); // 4x antialiasing
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3); // We want OpenGL 3.3
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4); // We want OpenGL 3.3
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); // We don't want the old OpenGL 
 
 	_window = glfwCreateWindow(_width, _height, _title.c_str(), NULL, NULL);
 }
 
-inline int Window::getHeight()
+int Window::getHeight()
 {
 	return _height;
 }
 
-inline int Window::getWidth()
+int Window::getWidth()
 {
 	return _width;
 }
 
-inline std::string Window::getTitle()
+std::string Window::getTitle()
 {
 	return _title;
 }

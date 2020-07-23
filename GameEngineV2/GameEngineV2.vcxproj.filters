@@ -30,6 +30,9 @@
     <ClCompile Include="Dependancies\GLM\detail\glm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\window.h">
@@ -884,6 +887,168 @@
     <ClInclude Include="Dependancies\GLM\vector_relational.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Dependancies\GLI\core\clear.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\core\convert_func.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\core\coord.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\core\file.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\core\filter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\core\filter_compute.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\core\flip.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\core\mipmaps_compute.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\core\storage.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\core\storage_linear.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\core\workaround.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\clear.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\comparison.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\convert.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\copy.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\duplicate.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\dx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\format.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\generate_mipmaps.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\gl.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\gli.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\image.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\levels.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\load.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\load_dds.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\load_kmg.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\load_ktx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\make_texture.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\reduce.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\sampler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\sampler_cube.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\sampler_cube_array.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\sampler1d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\sampler1d_array.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\sampler2d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\sampler2d_array.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\sampler3d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\save.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\save_dds.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\save_kmg.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\save_ktx.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\target.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\texture.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\texture_cube.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\texture_cube_array.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\texture1d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\texture1d_array.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\texture2d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\texture2d_array.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\texture3d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\transform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\type.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependancies\GLI\view.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Dependancies\GLM\detail\func_common.inl">
@@ -1292,6 +1457,138 @@
       <Filter>Header Files</Filter>
     </None>
     <None Include="Dependancies\GLM\gtx\wrap.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\clear.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\comparison.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\convert.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\copy.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\duplicate.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\dx.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\file.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\filter.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\flip.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\format.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\generate_mipmaps.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\gl.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\image.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\levels.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\load.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\load_dds.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\load_kmg.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\load_ktx.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\make_texture.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\reduce.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\sampler.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\sampler_cube.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\sampler_cube_array.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\sampler1d.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\sampler1d_array.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\sampler2d.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\sampler2d_array.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\sampler3d.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\save.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\save_dds.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\save_kmg.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\save_ktx.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\storage.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\storage_linear.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\texture.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\texture_cube.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\texture_cube_array.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\texture1d.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\texture1d_array.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\texture2d.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\texture2d_array.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\texture3d.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\transform.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Dependancies\GLI\core\view.inl">
       <Filter>Header Files</Filter>
     </None>
   </ItemGroup>
